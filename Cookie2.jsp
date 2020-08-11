@@ -22,6 +22,9 @@
 		}
 		response.addCookie(cookieSaveId);
 		
+		out.print("saveId= "+saveId);
+		out.print("id= " + id);
+		
 		response.sendRedirect("http://localhost:8083/Chap10/Cookie3.jsp");
 	%>
 	

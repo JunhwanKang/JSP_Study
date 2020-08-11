@@ -6,12 +6,13 @@
 </head>
 <body>
 	<%
+		String loginStatus = null;
 		String saveId = null;
 		String id = null;
 		Cookie[] cookies = request.getCookies();
 		if(cookies != null && cookies.length>0){
 			for(int i =0; i<cookies.length; i++){
-				if(cookies[i].getName().equals("saveId")&& cookies[i].getValue().equals("save"));{
+				if(cookies[i].getName().equals("saveId")&& cookies[i].getValue().equals("save")){
 					saveId = cookies[i].getValue();
 				}
 				if(cookies[i].getName().equals("id")){
@@ -19,6 +20,7 @@
 				}
 			}
 		}
+		out.print(saveId);
 	%>
 
 
@@ -26,7 +28,7 @@
 		<table border = "1">
 			<tr>
 				<td align = "center">아이디</td>
-				<td><input type = text name = id value = "<%= (id == null? "" : id) %>"/></td>
+				<td><input type = text name = id value = "<%= (id == null? "" : id)%>"/></td>
 			</tr>
 			<tr>
 				<td align = "center">비밀번호</td>
