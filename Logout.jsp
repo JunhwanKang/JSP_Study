@@ -35,6 +35,7 @@
 			}
 		}
 		%>
+		다시 로그인 하시려면 아래를 눌러주세요.<hr/>
 		
 	<form action = "Cookie1.jsp" method = "post">
 		<input type = "submit" value = "로그인 페이지 이동">
