@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"%>
+<%@ page import = "java.sql.*" %>
 <html>
 <head>
 </head>
@@ -28,7 +29,7 @@
 			</tr>	
 			<tr>
 				<td align = "left">비밀번호 확인</td>
-				<td><input type = "password" name = "Repw"></td>
+				<td><input type = "password" name = "pwChk"></td>
 			</tr>	
 			<tr>
 				<td align = "left">주소</td>
