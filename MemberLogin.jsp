@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"%>
 <html>
 <head>
+<title>로그인 페이지</title>
 </head>
 <body>
 	<%
@@ -17,13 +18,11 @@
 				}
 			}
 		}
-		id = request.getParameter("id");
-		pw = request.getParameter("pw");
 	%>
 	
 	아이디와 비밀번호를 입력하십시오<hr>
 	
-	<form action = "MemberLogined.jsp" method = "post">
+	<form action = "MemberLoginChk.jsp" method = "post">
 		<table border = "1">
 			<tr>
 				<td align = "center">아이디</td>

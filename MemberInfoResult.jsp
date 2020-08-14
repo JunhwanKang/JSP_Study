@@ -3,7 +3,7 @@
 <%@ page import = "java.sql.*" %>
 <html>
 <head>
-<title>Insert title here</title>
+<title>회원 정보</title>
 </head>
 <body>
 	<%
@@ -20,11 +20,7 @@
 		String phone = request.getParameter("phone");
 		String email = request.getParameter("email");
 		
-		if(password != passwordChk){
-	%>		
-		<jsp:forward page = "MemberPwNotSame.jsp"/>
-	<% 
-		}else{
+		if(password.equals(passwordChk)){
 			try{
 				Class.forName("com.mysql.cj.jdbc.Driver");
 				
@@ -39,6 +35,8 @@
 				if(stmt != null) try{stmt.close();}catch(SQLException e){}
 				if(conn != null) try{conn.close();}catch(SQLException e){}
 			}
+		}else{
+			response.sendRedirect("http://localhost:8083/Chap10/MemberPwNotSame.jsp");
 		}
 	
 	%>
