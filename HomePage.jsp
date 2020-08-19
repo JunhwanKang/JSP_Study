@@ -2,20 +2,22 @@
 <html>
 <head>
 <title>홈페이지</title>
-		<style>
-			body{
-				background-color: #C8EFD4; 
-				}	
-		</style>
 </head>
 <body>
-	<ul>
-		<li>My resume
-		<li>My resolution
-		<li>SNS
-	</ul>
+	<div id=container>
+		<aside>
+			<div id= "list">
+			<ul>
+				<li>My resume
+				<li>My resolution
+				<li>SNS
+			</ul>
+			</div>
+		</aside>
+	</div>
 	
-	
-	<h1>I want to work your company!</h1>
+	<div id = "main">
+		<h1>I want to work your company!</h1>
+	</div>
 </body>
 </html>
