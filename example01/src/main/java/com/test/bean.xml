@@ -4,12 +4,9 @@
 	xmlns:context="http://www.springframework.org/schema/context"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	<!-- 필드 주입(어노테이션 주입) -->
+	<context:annotation-config/>
+	<bean id="quest" class="com.icia.example10.quest.DragonQuest"/>
 	
-	<bean id="battery" class="com.example.example01.sample08.battery.KoreanBattery"/>
-	<bean id="usim" class="com.example.example01.sample08.usim.SKUsim"/>
-	<bean id="phone" class="com.example.example01.sample08.phone.Phone">
-		<constructor-arg ref="battery"/>
-		<constructor-arg ref="usim"/>
-		<constructor-arg ref="500000"/>
-	</bean>	
+	<bean id="knight" class="com.icia.example10.knight.Knight"/>
 </beans>
