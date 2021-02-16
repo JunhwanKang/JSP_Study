@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+	
+	<!-- java.util.Date date = new Date();  아래와 같다, 이것은 내가 만드는 것 아래는 스프링이 만들어줌-->
+	<bean id="date" class="java.util.Date"/>
+	
+	<!-- com.example.example01.sample06.Sample sample = new Sample(); -->
+	<bean id="sample" class="com.example.example01.sample06.Sample"/>
+</beans>
